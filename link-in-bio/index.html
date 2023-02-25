@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andro Vision | Links</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#VANTA",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+        });
+      });
+
+      setTimeout(() => {
+        const main = document.querySelector("main");
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    </script>
+  </head>
+  <body>
+    <div id="VANTA"></div>
+
+    <main>
+      <header>
+        <img src="./images/icons/AndroVision.png" alt="logo" />
+        <h1>@andro_vision_</h1>
+        <ul>
+          <li>
+            <a href="http://www.youtube.com/c/AndroVision">
+              <img src="./images/icons/youtube.png" alt="" />
+              YouTube
+            </a>
+          </li>
+
+          <li>
+            <a href="http://www.twitter.com/androvision1">
+              <img src="./images/icons/twitter2.png" alt="" />
+              Twitter
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/DarkSword7">
+              <img src="./images/icons/github-sign.png" alt="" />
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a href="http://www.instagram.com/andro_vision_">
+              <img src="./images/icons/instagram.png" alt="" />
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </header>
+    </main>
+  </body>
+</html>
